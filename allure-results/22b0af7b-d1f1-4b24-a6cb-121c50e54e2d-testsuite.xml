@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674800315423' stop='1674800375433'>
+    <name>Elements Commands</name>
+    <title>Elements Commands</title>
+    <test-cases>
+        <test-case start='1674800315423' status='broken' stop='1674800375433'>
+            <name>Filling form</name>
+            <title>Filling form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps>
+                <step start='1674800315430' status='broken' stop='1674800375432'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1674800315433' status='passed' stop='1674800315791'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='eef8dc4b-b5be-43eb-8ab0-6f9bda952fda-attachment.json' type='application/json' size='57'/>
+                                <attachment title='Response' source='764c6fe4-d6fd-4dd8-93a7-9e0235dd81a7-attachment.json' type='application/json' size='58'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1674800320440' status='broken' stop='1674800375432'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='c846fd67-0c5d-461f-a6e0-4b211166f563-attachment.json' type='application/json' size='85'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Elements Commands Filling form" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Webdriver Projects\orangehrm\test\specs\elements.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Elements Commands Filling form" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Webdriver Projects\orangehrm\test\specs\elements.js)
+                    at createTimeoutError (C:\Webdriver Projects\orangehrm\node_modules\mocha\lib\errors.js:498:15)
+                    at Runnable._timeoutError (C:\Webdriver Projects\orangehrm\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (C:\Webdriver Projects\orangehrm\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:564:17)
+                    at process.processTimers (node:internal/timers:507:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
